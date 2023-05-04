@@ -1885,7 +1885,7 @@ h1 {
   background-color: #9d8b81 !important; }
 
 .c-bg-dark {
-  background-color: #2f353b !important; }
+  background-color: #000000 !important; }
   .c-bg-dark.c-bg-opacity {
     /* RGBa with 0.04 opacity */
     background-color: rgba(47, 53, 59, 0.04) !important; }
@@ -1969,7 +1969,7 @@ h1 {
     color: #ffffff !important; }
 
 .c-bg-dark-2-hover:hover {
-  background-color: #31383c !important; }
+  background-color: #000000 !important; }
 
 .c-border-dark-2-hover:hover {
   border-color: #31383c !important; }
@@ -1981,7 +1981,7 @@ h1 {
   background-color: #31383c !important; }
 
 .c-bg-dark-3 {
-  background-color: #41515b !important; }
+  background-color: #000000 !important; }
   .c-bg-dark-3.c-bg-opacity {
     /* RGBa with 0.04 opacity */
     background-color: rgba(65, 81, 91, 0.04) !important; }
@@ -6242,7 +6242,7 @@ h1 {
           padding: 5px 0;
           border-bottom: 1px solid #394047; }
           .c-layout-footer.c-layout-footer-3 .c-prefooter .c-container .c-links > li > a {
-            color: #5c6873; }
+            color: #ffffff; }
             .c-layout-footer.c-layout-footer-3 .c-prefooter .c-container .c-links > li > a:hover {
               color: #32c5d2; }
           .c-layout-footer.c-layout-footer-3 .c-prefooter .c-container .c-links > li:last-child {
