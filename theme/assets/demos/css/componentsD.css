@@ -604,9 +604,12 @@ h1 {
 
 /* Font Colors */
 .c-font-white {
-  color: #ffffff !important; }
+  color: #000000 !important; 
+  font-weight: bold;
+  
+}
   .c-font-white small {
-    color: #ffffff !important; }
+    color: #000000 !important; }
 
 .c-font-white-hover:hover {
   color: #ffffff !important; }
@@ -6854,7 +6857,7 @@ h1 {
   padding: 30px 0; }
 
 .c-content-box.c-size-md {
-  padding: 60px 0; }
+  padding: 60px 0;}
 
 .c-content-box.c-size-lg {
   padding: 80px 0; }
@@ -7709,7 +7712,7 @@ h1 {
 .c-content-title-1 > .c-line-center {
   width: 30px;
   height: 3px;
-  background-color: #32c5d2;
+  background-color: #000;
   margin: 0 auto 30px auto; }
 
 .c-content-title-1 > .c-line-right,
@@ -7724,7 +7727,7 @@ h1 {
 
 .c-content-title-1 > h3 {
   font-size: 28px;
-  color: #ffffff;
+  color: #000;
   font-weight: 500;
   margin: 0 0 30px 0; }
   .c-content-title-1 > h3 > i {
@@ -9868,14 +9871,13 @@ h1 {
   .c-content-counter-1 > .row > div > .c-title {
     font-weight: 300;
     font-size: 20px;
-    color: #ffffff;
+    color: #000;
     margin: 20px 0 15px 0; }
   .c-content-counter-1 > .row > div > .c-counter {
     font-size: 45px;
     font-weight: 300;
     color: #000000;
     margin: 10px auto 30px auto;
-    background-color: #fff;
     width: 200px;
     height: 200px;
     padding: 65px 0;
@@ -11623,13 +11625,13 @@ h1 {
 .c-content-tab-5 .c-nav-tab > li.active > a,
 .c-content-tab-5 .c-nav-tab > li a:hover {
   color: #fff;
-  background-color: #CB2B2B; }
+  background-color: #000; }
 
 .c-content-tab-5 .c-nav-tab.c-arrow a:hover:after {
-  border-left-color: #d05163; }
+  border-left-color: #000; }
 
 .c-content-tab-5 .c-nav-tab.c-arrow .active > a:after {
-  border-left-color: #d05163; }
+  border-left-color: #000; }
 
 .c-content-tab-5 .c-space {
   margin: 15px 0; }

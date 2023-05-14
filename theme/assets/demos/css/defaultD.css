@@ -2,9 +2,9 @@
 THEME COLOR - DEFAULT
 *********************/
 a {
-  color: #3f444a; }
+  color: #000000; }
   a:active, a:hover, a:focus {
-    color: #32c5d2; }
+    color: #CB2B2B; }
 
 .c-theme-link:focus, .c-theme-link:active, .c-theme-link:hover {
   color: #CB2B2B !important; }
@@ -75,7 +75,7 @@ a {
   color: #CB2B2B !important; }
 
 .c-theme-bg {
-  background-color: #CB2B2B !important; }
+  background-color: #000000 !important; }
   .c-theme-bg.c-theme-darken {
     background-color: #CB2B2B !important; }
 
@@ -95,7 +95,7 @@ a {
   background-color: #CB2B2B !important; }
 
 .c-theme-border {
-  border-color: #CB2B2B !important; }
+  border-color: #000000 !important; }
 
 .c-theme-on-hover:hover {
   color: #CB2B2B !important; }
@@ -306,7 +306,7 @@ a {
   .owl-carousel.c-theme .owl-controls .owl-dot:hover {
     background: #fff; }
   .owl-carousel.c-theme .owl-controls .owl-dot.active {
-    background: #CB2B2B; }
+    background: #000000; }
 
 .cbp-l-filters-button .cbp-filter-counter,
 .cbp-l-filters-buttonCenter .cbp-filter-counter {
