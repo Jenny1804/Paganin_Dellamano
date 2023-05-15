@@ -882,7 +882,7 @@ h1 {
 }
 
 .c-font-red {
-  color: #eb5d68 !important;
+  color: #CB2B2B !important;
 }
 
 .c-font-red small {
@@ -1659,7 +1659,7 @@ h1 {
 }
 
 .c-bg-red {
-  background-color: #eb5d68 !important;
+  background-color: #CB2B2B !important;
 }
 
 .c-bg-red.c-bg-opacity {
@@ -11979,7 +11979,7 @@ h1 {
 .c-content-title-1>.c-line-center {
   width: 30px;
   height: 3px;
-  background-color: #32c5d2;
+  background-color: #000;
   margin: 0 auto 30px auto;
 }
 
@@ -11997,7 +11997,7 @@ h1 {
 
 .c-content-title-1>h3 {
   font-size: 28px;
-  color: #343a3d;
+  color: #000;
   font-weight: 500;
   margin: 0 0 30px 0;
 }
