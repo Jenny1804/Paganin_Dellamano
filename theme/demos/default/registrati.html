@@ -1,44 +1,78 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8" />
-        <title>AC MILAN SHOP</title>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-        <meta http-equiv="Content-type" content="text/html; charset=utf-8">
-        <meta content="" name="description" />
-        <meta content="" name="author" />
-    
-        <!-- BEGIN THEME STYLES -->
-        <link href="../../assets/demos/css/login.css" rel="stylesheet" type="text/css" />
-        <!-- END THEME STYLES -->
-    
-        <link rel="shortcut icon" href="favicon.ico" />
-    </head>
+<head>
+    <meta charset="utf-8" />
+    <title>AC MILAN SHOP</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta content="" name="description" />
+    <meta content="" name="author" />
 
-    <body>
-        <div class="container">
-            <div class="img-container">
-                <img src="../../assets/base/img/login.jpeg" class="c-desktop-logo">
+    <!-- BEGIN THEME STYLES -->
+    <link href="../../assets/demos/css/login.css" rel="stylesheet" type="text/css" />
+    <!-- END THEME STYLES -->
+
+    <link rel="shortcut icon" href="favicon.ico" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="img-container">
+            <img src="../../assets/base/img/login.jpeg" class="c-desktop-logo">
+        </div>
+        <div class="form-container">
+            <div>
+                <h1>Register</h1>
             </div>
-            <div class="form-container">
-                <div>
-                   <h1>Register</h1>
-                </div>
-                <form>
-                    <label for="username">Username</label>
-                    <input type="text" id="username" name="username" placeholder="Enter your username">
-                    <label for="email">Email</label>
-                    <input type="text" id="email" name="email" placeholder="Enter your email">
-                    <label for="password">Password</label>
-                    <input type="password" id="password" name="password" placeholder="Enter your password">
-                    <input type="submit" value="Login">
-                </form>
-                <div class="register-link">
-                    <p>Already registered? <a href="login.html">Login</a></p>
-                </div>
+            <form id="registration-form">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" placeholder="Enter your username">
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" placeholder="Enter your email">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password">
+                <input type="submit" value="Register">
+            </form>
+            <div class="register-link">
+                <p>Already registered? <a href="login.html">Login</a></p>
             </div>
         </div>
-    </body>    
-    </html>
-    
+    </div>
+
+    <script>
+        document.getElementById('registration-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent form submission
+            
+            // Get form values
+            var username = document.getElementById('username').value;
+            var email = document.getElementById('email').value;
+            var password = document.getElementById('password').value;
+
+            // Perform AJAX request
+            var xhr = new XMLHttpRequest();
+            xhr.open('POST', 'registration.php', true);
+            xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    var response = xhr.responseText;
+                    if (response === 'success') {
+                        // Registration successful, show success message
+                        alert('Registration successful!');
+
+                        // Optionally, you can redirect to another page
+                        // window.location.href = 'success.html';
+                    } else if (response === 'exists') {
+                        // User already exists, show error message
+                        alert('User already exists!');
+                    } else {
+                        // Registration failed, show error message
+                        alert('Registration failed!');
+                    }
+                }
+            };
+            xhr.send('username=' + encodeURIComponent(username) + '&email=' + encodeURIComponent(email) + '&password=' + encodeURIComponent(password));
+        });
+    </script>
+</body>
+</html>
