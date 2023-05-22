@@ -11619,7 +11619,7 @@ footer.footer-creative {
 }
 
 .player-info-corporate.player-info-other-team .player-info-figure .block-number {
-    background: #3B7CC0;
+    background: #B08B2B;
 }
 
 .player-info-corporate.player-info-other-team .player-info-subtitle {
@@ -11627,11 +11627,11 @@ footer.footer-creative {
 }
 
 .player-info-corporate.player-info-other-team .player-info-progress .progress-bar-linear, .player-info-corporate.player-info-other-team .player-info-progress .progress-bar-linear::before {
-    background-color: #3B7CC0;
+    background-color: #B08B2B;
 }
 
 .player-info-corporate.player-info-other-team .player-info-progress .progress-value {
-    color: #3B7CC0;
+    color: #B08B2B;
 }
 
 .player-info-figure {
@@ -11656,7 +11656,7 @@ footer.footer-creative {
     letter-spacing: 0.123em;
     color: #fff;
     text-align: center;
-    background: #35ad79;
+    background: #B08B2B;
     transform: skewY(7deg);
     z-index: 1;
 }
@@ -11876,15 +11876,15 @@ footer.footer-creative {
 }
 
 .player-info-modern-progress .progress-bar-modern .progress-bar-linear {
-    background-color: #fcef57;
+    background-color: #B08B2B;
 }
 
 .player-info-modern-progress .progress-bar-modern .progress-bar-linear::before {
-    background: #fcef57;
+    background: #B08B2B;
 }
 
 .player-info-modern-progress .progress-bar-modern .progress-value {
-    color: #fcef57;
+    color: #B08B2B;
 }
 
 .player-info-modern-accent .player-info-modern-footer {
@@ -21060,27 +21060,27 @@ p [data-bs-toggle='tooltip'] {
 }
 
 .progress-bar-modern-secondary .progress-bar-linear {
-    background-color: #fcef57;
+    background-color: #B08B2B;
 }
 
 .progress-bar-modern-secondary .progress-bar-linear::before {
-    background: #fcef57;
+    background: #B08B2B;
 }
 
 .progress-bar-modern-secondary .progress-value {
-    color: #fcef57;
+    color: #B08B2B;
 }
 
 .progress-bar-modern-red .progress-bar-linear {
-    background-color: #fd6565;
+    background-color: #B08B2B;
 }
 
 .progress-bar-modern-red .progress-bar-linear::before {
-    background: #fd6565;
+    background: #B08B2B;
 }
 
 .progress-bar-modern-red .progress-value {
-    color: #fd6565;
+    color: #B08B2B;
 }
 
 .progress-bar-modern + .progress-bar-modern {

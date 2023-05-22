@@ -17958,7 +17958,12 @@ h1 {
 
 .c-content-tab-4.c-opt-5>.nav>li>a {
   color: #ffffff;
-  background-color: #d5e0ea;
+  background-color: #ead5d5;
+}
+
+.c-out-of-stock2 {
+  font-weight: bold;
+  color: white;
 }
 
 .c-content-tab-4.c-opt-5>.nav>li>a:hover,
@@ -17969,11 +17974,11 @@ h1 {
 .c-content-tab-4.c-opt-5>.nav>li.active>a,
 .c-content-tab-4.c-opt-5>.nav>li:active>a {
   color: #ffffff;
-  background-color: #5bc2ce;
+  background-color: #800000;
 }
 
 .c-content-tab-4.c-opt-5>.nav>li:nth-child(even)>a {
-  background-color: #d5e0ea;
+  background-color: #ead5d5;
 }
 
 .c-content-tab-4.c-opt-5>.nav>li:nth-child(even)>a:hover,
@@ -17984,7 +17989,7 @@ h1 {
 .c-content-tab-4.c-opt-5>.nav>li:nth-child(even).active>a,
 .c-content-tab-4.c-opt-5>.nav>li:nth-child(even):active>a {
   color: #ffffff;
-  background-color: #5bc2ce;
+  background-color: #800000;
 }
 
 .c-content-tab-4.c-opt-5>.tab-content {
