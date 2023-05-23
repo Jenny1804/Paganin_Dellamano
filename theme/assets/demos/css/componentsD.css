@@ -3975,7 +3975,8 @@ h1 {
       background: none; }
       .c-layout-header.c-layout-header-default .c-navbar .c-mega-menu > .nav.navbar-nav > li > .c-btn-icon,
       .c-layout-header.c-layout-header-default .c-navbar .c-mega-menu > .nav.navbar-nav > li > .c-link {
-        color: #ffffff; }
+        color: #ffffff; 
+        text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;}
         .c-layout-header.c-layout-header-default .c-navbar .c-mega-menu > .nav.navbar-nav > li > .c-btn-icon:hover, .c-layout-header.c-layout-header-default .c-navbar .c-mega-menu > .nav.navbar-nav > li > .c-btn-icon:focus,
         .c-layout-header.c-layout-header-default .c-navbar .c-mega-menu > .nav.navbar-nav > li > .c-link:hover,
         .c-layout-header.c-layout-header-default .c-navbar .c-mega-menu > .nav.navbar-nav > li > .c-link:focus {
@@ -3993,28 +3994,38 @@ h1 {
         .c-layout-header.c-layout-header-default .c-navbar .c-mega-menu > .nav.navbar-nav > li.c-active > button > .c-line {
           background: #ffffff; }
     .c-layout-header.c-layout-header-default .c-quick-search > .form-control {
-      color: #ffffff; }
+      color: #ffffff; 
+      text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+    }
       .c-layout-header.c-layout-header-default .c-quick-search > .form-control::-moz-placeholder {
-        color: white; }
+        color: white; 
+        text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;}
       .c-layout-header.c-layout-header-default .c-quick-search > .form-control:-moz-placeholder {
-        color: white; }
+        color: white; 
+        text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;}
       .c-layout-header.c-layout-header-default .c-quick-search > .form-control:-ms-input-placeholder {
-        color: white; }
+        color: white; 
+        text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;}
       .c-layout-header.c-layout-header-default .c-quick-search > .form-control::-webkit-input-placeholder {
-        color: white; }
+        color: white; 
+        text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;}
     .c-layout-header.c-layout-header-default .c-quick-search > span {
-      color: white; }
+      color: white; 
+      text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;}
   .c-page-on-scroll .c-layout-header.c-layout-header-default {
     background: rgba(0, 0, 0, 0.7);
     border-bottom: 0;
     box-shadow: none; }
     .c-page-on-scroll .c-layout-header.c-layout-header-default .c-navbar .c-mega-menu > .nav.navbar-nav > li > .c-btn-icon,
     .c-page-on-scroll .c-layout-header.c-layout-header-default .c-navbar .c-mega-menu > .nav.navbar-nav > li > .c-link {
-      color: #ffffff; }
+      color: #ffffff; 
+      text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+    }
       .c-page-on-scroll .c-layout-header.c-layout-header-default .c-navbar .c-mega-menu > .nav.navbar-nav > li > .c-btn-icon:hover, .c-page-on-scroll .c-layout-header.c-layout-header-default .c-navbar .c-mega-menu > .nav.navbar-nav > li > .c-btn-icon:focus,
       .c-page-on-scroll .c-layout-header.c-layout-header-default .c-navbar .c-mega-menu > .nav.navbar-nav > li > .c-link:hover,
       .c-page-on-scroll .c-layout-header.c-layout-header-default .c-navbar .c-mega-menu > .nav.navbar-nav > li > .c-link:focus {
-        color: #ffffff; }
+        color: #ffffff; 
+        text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;}
     .c-page-on-scroll .c-layout-header.c-layout-header-default .c-navbar .c-mega-menu > .nav.navbar-nav > li > .c-quick-sidebar-toggler > .c-line {
       background-color: white; } }
 
@@ -6857,7 +6868,17 @@ h1 {
   padding: 30px 0; }
 
 .c-content-box.c-size-md {
-  padding: 60px 0;}
+  padding: 60px 0;
+  background-color: rgba(0, 0, 0, 0);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  visibility: inherit;
+  z-index: 20;
+}
 
 .c-content-box.c-size-lg {
   padding: 80px 0; }

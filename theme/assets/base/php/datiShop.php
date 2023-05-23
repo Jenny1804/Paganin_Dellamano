@@ -15,7 +15,7 @@ try {
     die();
 }
 
-$sql = "SELECT nome, descrizione, quantita, img, prezzo FROM prodotto";
+$sql = "SELECT nome, descrizione, quantita, img, prezzo, abbigliamento FROM prodotto";
 
 //INVIO QUERY AL DATABASE
 $stmt = $conn->query($sql);
@@ -28,7 +28,8 @@ while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
         'descrizione' => $row["descrizione"],
         'quantita' => $row["quantita"],
         'img' => $row["img"],
-        'prezzo' => $row["prezzo"]
+        'prezzo' => $row["prezzo"],
+        'abbigliamento' => $row["abbigliamento"]
     );
     array_push($prodotti, $prodotto);
 }

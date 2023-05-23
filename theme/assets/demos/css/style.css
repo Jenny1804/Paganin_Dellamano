@@ -88,18 +88,6 @@ html p a:hover {
 *
 * Typography
 */
-body {
-    display: block;
-    font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    font-size: 14px;
-    line-height: 1.71429;
-    font-weight: 400;
-    letter-spacing: 0.025em;
-    color: #9b9b9b;
-    background-color: #fff;
-    -webkit-text-size-adjust: none;
-    -webkit-font-smoothing: subpixel-antialiased;
-}
 
 h1, h2, h3, h4, h5, h6, [class*='heading-'] {
     margin-top: 0;
@@ -108,7 +96,6 @@ h1, h2, h3, h4, h5, h6, [class*='heading-'] {
     font-weight: 500;
     letter-spacing: 0.05em;
     color: #151515;
-    text-transform: uppercase;
 }
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, [class*='heading-'] a {
