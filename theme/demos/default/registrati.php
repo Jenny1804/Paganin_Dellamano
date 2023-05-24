@@ -1,5 +1,5 @@
 <?php
-require_once 'config.php';
+require ("config.php");
 
 // Recupero dei dati inviati dal form di registrazione
 $username = $_POST['username'];

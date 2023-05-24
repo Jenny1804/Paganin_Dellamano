@@ -77,10 +77,7 @@
                         });
                         // place the errors inside the div#error-msg.
                         $("#error-msg").html(errorMessage);
-                        $("#error-msg").show(); // show it on the browser, default state, hide
-                        // remove disable attribute to the login button, 
-                        //to prevent multiple form submissions 
-                        //we have added this attribution on login from submit
+                        $("#error-msg").show(); // show it on the browser
                         self.prop('disabled', false);
                     }
                 }).fail(function() {
