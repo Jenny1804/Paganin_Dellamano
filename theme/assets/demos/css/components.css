@@ -1219,7 +1219,8 @@ h1 {
 }
 
 .c-font-grey-1 {
-  color: #f7f7f7 !important;
+  color: #000000 !important;
+  font-weight: bold;
 }
 
 .c-font-grey-1 small {
@@ -16179,7 +16180,7 @@ h1 {
 }
 
 .c-content-feature-10 .c-bg-opacity-1 {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: #cb2b2b;
   border: none;
 }
 

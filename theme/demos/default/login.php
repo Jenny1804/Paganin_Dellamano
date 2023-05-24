@@ -1,49 +1,37 @@
 <?php
-require ("config.php");
+// Connessione al database
+$servername = "localhost";
+$username = "root";
+$password = "admin";
+$dbname = "ac_milan";
 
-$error = array();
-$res = array();
-
-if (empty($_POST['email'])) {
-    $error[] = "Email field is required";
+$conn = new mysqli($servername, $username, $password, $dbname);
+if ($conn->connect_error) {
+    die("Connessione al database fallita: " . $conn->connect_error);
 }
 
-if (empty($_POST['password'])) {
-    $error[] = "Password field is required";
-}
+// Recupero dei dati inviati dal form di login
+$name = $_POST['name'];
+$password = $_POST['password'];
 
-if (!empty($_POST['email']) && !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
-    $error[] = "Enter a valid email address";
-}
+// Controllo se l'utente esiste nel database
+$sql = "SELECT * FROM utente WHERE nome = '$name' AND password = '$password'";
+$result = $conn->query($sql);
 
-if (count($error) > 0) {
-    $resp['msg'] = $error;
-    $resp['status'] = false;
-    echo json_encode($resp);
-    exit;
-}
+if ($result->num_rows > 0) {
+    // Login avvenuto con successo
+    session_start(); // Avvia la sessione
 
-$statement = $db->prepare("SELECT * FROM users WHERE email = :email");
-$statement->execute(array(':email' => $_POST['email']));
-$row = $statement->fetch(PDO::FETCH_ASSOC);
+    // Salva i dati dell'utente nella sessione
+    $_SESSION['email'] = $email;
+    $_SESSION['password'] = $password;
 
-if ($row) {
-    if (password_verify($_POST['password'], $row['password'])) {
-        session_start();
-        $_SESSION['user_id'] = $row['user_id'];
-        $resp['redirect'] = "dashboard.php";
-        $resp['status'] = true;
-        echo json_encode($resp);
-        exit;
-    } else {
-        $error[] = "Invalid password";
-    }
+    header("Location: home.php");
+    exit();
 } else {
-    $error[] = "Email does not exist";
+    // Credenziali non valide
+    echo '<script>alert("Credenziali non valide. Riprova."); window.history.back();</script>';
 }
 
-$resp['msg'] = $error;
-$resp['status'] = false;
-echo json_encode($resp);
-exit;
+$conn->close();
 ?>

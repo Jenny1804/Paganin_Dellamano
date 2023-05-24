@@ -12,8 +12,6 @@
     <!-- BEGIN THEME STYLES -->
     <link href="../../assets/demos/css/login.css" rel="stylesheet" type="text/css" />
     <!-- END THEME STYLES -->
-
-    <link rel="shortcut icon" href="favicon.ico" />
 </head>
 
 <body>
@@ -25,52 +23,19 @@
             <div>
                 <h1>Register</h1>
             </div>
-            <form id="registration-form">
-                <label for="username">Username</label>
-                <input type="text" id="username" name="username" placeholder="Enter your username">
+            <form action="registrati.php" method="POST">
+                <label for="username">Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your username">
                 <label for="email">Email</label>
                 <input type="text" id="email" name="email" placeholder="Enter your email">
                 <label for="password">Password</label>
                 <input type="password" id="password" name="password" placeholder="Enter your password">
-                <input type="submit" value="Register">
+                <input type="submit" value="Registrati">
             </form>
             <div class="register-link">
                 <p>Already registered? <a href="login.html">Login</a></p>
             </div>
         </div>
     </div>
-
-    <script>
-        document.getElementById('registration-form').addEventListener('submit', function(event) {
-            event.preventDefault(); // Prevent form submission
-            
-            // Get form values
-            var username = document.getElementById('username').value;
-            var email = document.getElementById('email').value;
-            var password = document.getElementById('password').value;
-
-            // Perform AJAX request
-            var xhr = new XMLHttpRequest();
-            xhr.open('POST', 'registration.php', true);
-            xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
-            xhr.onreadystatechange = function() {
-                if (xhr.readyState === 4 && xhr.status === 200) {
-                    var response = xhr.responseText;
-                    if (response === 'success') {
-                        // Registration successful, show success message
-                        alert('Registration successful!');
-                        window.location.href = 'home.html'; // Redirect to home.html
-                    } else if (response === 'exists') {
-                        // User already exists, show error message
-                        alert('User already exists!');
-                    } else {
-                        // Registration failed, show error message
-                        alert('Registration failed!');
-                    }
-                }
-            };
-            xhr.send('username=' + encodeURIComponent(username) + '&email=' + encodeURIComponent(email) + '&password=' + encodeURIComponent(password));
-        });
-    </script>
 </body>
 </html>
