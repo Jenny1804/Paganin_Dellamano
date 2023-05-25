@@ -13,7 +13,8 @@ if ($conn->connect_error) {
 // Recupero dei dati inviati dal form di registrazione
 $name = $_POST['name'];
 $email = $_POST['email'];
-$password = $_POST['password'];
+$psw = $_POST['password'];
+$password = password_hash($psw, PASSWORD_DEFAULT);
 
 // Inizializza la variabile per gli eventuali messaggi di errore
 $errorMessage = '';
@@ -47,7 +48,7 @@ if (!empty($errorMessage)) {
         $sql = "INSERT INTO utente (nome, email, password) VALUES ('$name', '$email', '$password')";
         
         if ($conn->query($sql) === TRUE) {
-            header("Location: home.html");
+            header("Location: ../../../demos/default/login.html");
             exit();
         } else {
             echo '<script>alert("Errore durante la registrazione: ' . $conn->error . '"); window.history.back();</script>';
